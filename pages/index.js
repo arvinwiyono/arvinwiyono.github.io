@@ -6,7 +6,7 @@ export default function Home() {
       <Head>
         <title>Arvin Wiyono</title>
       </Head>
-      <div>Hello, world!</div>
+      <div className="text-2xl">Hello, world!</div>
     </>
   );
 }

@@ -2,7 +2,7 @@ $footer-height: 9rem;
 
 .pageWrapper {
   > main {
-    min-height: calc(100vh - $footer-height);
+    min-height: calc(100vh - #{$footer-height});
   }
 }
 

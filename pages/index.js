@@ -79,7 +79,9 @@ export default function Home() {
         </ExternalLink>
         <ExternalLink url="https://www.youtube.com/watch?v=S6-mynCaNwk">
           <span className="jam jam-youtube"></span>
-          <span className={styles.linkDescription}>My Youtube guitar cover</span>
+          <span className={styles.linkDescription}>
+            My Youtube guitar cover
+          </span>
         </ExternalLink>
       </div>
     </PageLayout>

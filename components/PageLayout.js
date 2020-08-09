@@ -1,8 +1,9 @@
 import Head from "next/head";
+import styles from "../styles/page_layout.module.scss";
 
 export default function PageLayout({ children }) {
   return (
-    <div className="page-layout py-16 px-8 max-w-md md:max-w-lg sm:px-0 mx-auto">
+    <>
       <Head>
         <title>Arvin Wiyono</title>
         <link
@@ -14,7 +15,13 @@ export default function PageLayout({ children }) {
           href="https://unpkg.com/jam-icons/css/jam.min.css"
         ></link>
       </Head>
-      {children}
-    </div>
+      <main className="page-layout py-16 px-8 max-w-md md:max-w-lg sm:px-0 mx-auto">
+        {children}
+      </main>
+      <footer className={styles.footer}>
+        <div>さよなら 👋</div>
+        <code>@awiy1-2020</code>
+      </footer>
+    </>
   );
 }

@@ -24,9 +24,9 @@ export default function Home() {
         .
       </h1>
 
-      <div className="my-12 flex items-end">
+      <div className="my-12 sm:flex items-end">
         <img
-          className="rounded shadow-lg w-2/5 mr-6"
+          className="rounded shadow-lg mb-4 w-1/3 sm:mr-6 sm:mb-0"
           src="/profile-picture.png"
           alt="Arvin profile picture"
         />
@@ -69,12 +69,17 @@ export default function Home() {
 
       <div className={styles.myLinks}>
         <p>You can find me on or say hi on:</p>
-        <ExternalLink url="https://github.com/arvinwiyono">GitHub</ExternalLink>
+        <ExternalLink url="https://github.com/arvinwiyono">
+          <span className="jam jam-github"></span>
+          <span className={styles.linkDescription}>My GitHub profile</span>
+        </ExternalLink>
         <ExternalLink url="https://www.linkedin.com/in/arvin-wiyono-80b5bba7/">
-          LinkedIn
+          <span className="jam jam-linkedin"></span>
+          <span className={styles.linkDescription}>My LinkedIn profile</span>
         </ExternalLink>
         <ExternalLink url="https://www.youtube.com/watch?v=S6-mynCaNwk">
-          YouTube
+          <span className="jam jam-youtube"></span>
+          <span className={styles.linkDescription}>My Youtube guitar cover</span>
         </ExternalLink>
       </div>
     </PageLayout>

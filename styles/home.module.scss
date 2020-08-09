@@ -1,7 +1,17 @@
 .myLinks {
   @apply my-12;
 
-  > *:not(:last-child) {
+  > a {
+    @apply text-3xl;
+    @apply text-gray-800;
+    text-decoration: none;
+  }
+
+  > a:not(:last-child) {
     @apply mr-4;
   }
+}
+
+.linkDescription {
+  display: none;
 }

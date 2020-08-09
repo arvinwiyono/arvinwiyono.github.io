@@ -1,11 +1,13 @@
 import Head from "next/head";
 import styles from "../styles/page_layout.module.scss";
 
-export default function PageLayout({ children }) {
+export default function PageLayout({ children, pageTitle, pageDescription }) {
   return (
     <>
       <Head>
-        <title>Arvin Wiyono</title>
+        <title>Arvin Wiyono | {pageTitle}</title>
+        <meta name="author" content="Arvin Wiyono" />
+        <meta name="description" content={pageDescription} />
         <link
           href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap"
           rel="stylesheet"

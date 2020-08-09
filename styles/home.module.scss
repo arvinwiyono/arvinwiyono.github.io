@@ -1,0 +1,7 @@
+.myLinks {
+  @apply my-12;
+
+  > *:not(:last-child) {
+    @apply mr-4;
+  }
+}

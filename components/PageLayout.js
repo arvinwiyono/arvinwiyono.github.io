@@ -15,13 +15,15 @@ export default function PageLayout({ children }) {
           href="https://unpkg.com/jam-icons/css/jam.min.css"
         ></link>
       </Head>
-      <main className="page-layout py-16 px-8 max-w-md md:max-w-lg sm:px-0 mx-auto">
-        {children}
-      </main>
-      <footer className={styles.footer}>
-        <div>さよなら 👋</div>
-        <code>@awiy1-2020</code>
-      </footer>
+      <div className={styles.pageWrapper}>
+        <main className="page-layout py-16 px-8 max-w-md sm:max-w-lg sm:px-0 mx-auto">
+          {children}
+        </main>
+        <footer className={styles.footer}>
+          <div>さよなら 👋</div>
+          <code>@awiy1-2020</code>
+        </footer>
+      </div>
     </>
   );
 }

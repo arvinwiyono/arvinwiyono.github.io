@@ -13,6 +13,6 @@ body {
   box-sizing: border-box;
 }
 
-p:not([class]) {
+p {
   @apply my-4;
 }

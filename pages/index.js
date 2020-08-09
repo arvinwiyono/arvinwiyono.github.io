@@ -5,20 +5,20 @@ import styles from "../styles/home.module.scss";
 
 export default function Home() {
   return (
-    <PageLayout>
+    <PageLayout pageTitle="Home" pageDescription="Arvin Wiyono's homepage">
       <h1 className="text-3xl">
-        I{" "}
-        <PulsingText bolded color="#659FD3">
-          code
+        I build{" "}
+        <PulsingText bolded color="#4f7da7">
+          websites
         </PulsingText>
         ,
-        <br />I{" "}
-        <PulsingText bolded color="#49BDA8">
-          make guitar covers
+        <br />I make{" "}
+        <PulsingText bolded color="#348677">
+          guitar covers
         </PulsingText>
         ,
         <br />I sometimes{" "}
-        <PulsingText bolded color="#BD9649">
+        <PulsingText bolded color="#96783c">
           take photos
         </PulsingText>
         .
@@ -53,11 +53,11 @@ export default function Home() {
           real-world problems for real people.
         </p>
         <p>
-          I am now working as a developer at{" "}
+          I am currently working as a software developer at{" "}
           <ExternalLink url="https://au.jora.com">jora.com</ExternalLink> - part
           of <ExternalLink url="https://seek.com.au">seek.com.au</ExternalLink>{" "}
-          - helping people live more fulfilling working lives by gathering and
-          serving jobseekers millions of jobs worldwide. I work mostly with{" "}
+          - helping people live more fulfilling working lives by serving them
+          millions of jobs worldwide. I work with{" "}
           <span className="font-semibold">Ruby on Rails</span>,{" "}
           <span className="font-semibold">JavaScript</span>, and{" "}
           <span className="font-semibold">Sass</span>.
@@ -68,7 +68,7 @@ export default function Home() {
       </div>
 
       <div className={styles.myLinks}>
-        <p>You can find me on or say hi on:</p>
+        <p>You can find me or say hi on:</p>
         <ExternalLink url="https://github.com/arvinwiyono">
           <span className="jam jam-github"></span>
           <span className={styles.linkDescription}>My GitHub profile</span>

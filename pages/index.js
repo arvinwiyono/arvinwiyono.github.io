@@ -1,12 +1,12 @@
-import PageLayout from "../components/PageLayout";
+import PageLayout from "../components/PageLayout/PageLayout";
 import PulsingText from "../components/PulsingText";
-import ExternalLink from "../components/ExternalLink";
+import ExternalLink from "../components/ExternalLink/ExternalLink";
 import styles from "../styles/home.module.scss";
 
 export default function Home() {
   return (
     <PageLayout pageTitle="Home" pageDescription="Arvin Wiyono's homepage">
-      <h1 className="text-3xl">
+      <h1 className={styles.homeHeading}>
         I build{" "}
         <PulsingText bolded color="#4f7da7">
           websites
@@ -40,7 +40,7 @@ export default function Home() {
         </h2>
       </div>
 
-      <div>
+      <div className="my-12">
         <p>
           I am a web developer based in Melbourne, Australia. I graduated as the{" "}
           <ExternalLink url="https://www.monash.edu/it/about-us/news-and-events/latest/articles/2018/outstanding-fit-students-recognised">
@@ -67,7 +67,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className={styles.myLinks}>
+      <div className={styles.mediaLinks}>
         <p>You can find me or say hi on:</p>
         <ExternalLink url="https://github.com/arvinwiyono">
           <span className="jam jam-github"></span>

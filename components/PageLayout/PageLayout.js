@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "../styles/page_layout.module.scss";
+import styles from "./PageLayout.module.scss";
 
 export default function PageLayout({ children, pageTitle, pageDescription }) {
   return (
@@ -17,12 +17,10 @@ export default function PageLayout({ children, pageTitle, pageDescription }) {
           href="https://unpkg.com/jam-icons/css/jam.min.css"
         ></link>
       </Head>
-      <div className={styles.pageWrapper}>
-        <main className="page-layout py-16 px-8 max-w-md sm:max-w-lg sm:px-0 mx-auto">
-          {children}
-        </main>
+      <div className={styles.pageLayout}>
+        <main className={styles.mainContent}>{children}</main>
         <footer className={styles.footer}>
-          <div>さよなら 👋</div>
+          <div className="animate-bounce">さよなら 👋</div>
           <code>@awiy1-2020</code>
         </footer>
       </div>

@@ -1,4 +1,8 @@
-.myLinks {
+.homeHeading {
+  @apply text-3xl;
+}
+
+.mediaLinks {
   @apply mt-12;
 
   > a {

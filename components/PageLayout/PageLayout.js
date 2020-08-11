@@ -17,12 +17,10 @@ export default function PageLayout({ children, pageTitle, pageDescription }) {
           href="https://unpkg.com/jam-icons/css/jam.min.css"
         ></link>
       </Head>
-      <div className={styles.pageWrapper}>
-        <main className={styles.mainContent}>
-          {children}
-        </main>
+      <div className={styles.pageLayout}>
+        <main className={styles.mainContent}>{children}</main>
         <footer className={styles.footer}>
-          <div>さよなら 👋</div>
+          <div className="animate-bounce">さよなら 👋</div>
           <code>@awiy1-2020</code>
         </footer>
       </div>

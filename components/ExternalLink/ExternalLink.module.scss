@@ -1,0 +1,16 @@
+.externalLink {
+  @apply underline;
+  @apply font-semibold;
+  @apply transition-colors;
+  @apply ease-in-out;
+  @apply duration-300;
+
+  &:focus,
+  &:visited {
+    @apply text-gray-600;
+  }
+
+  &:hover {
+    @apply text-pink-300;
+  }
+}

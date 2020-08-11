@@ -1,6 +1,6 @@
-import PageLayout from "../components/PageLayout";
+import PageLayout from "../components/PageLayout/PageLayout";
 import PulsingText from "../components/PulsingText";
-import ExternalLink from "../components/ExternalLink";
+import ExternalLink from "../components/ExternalLink/ExternalLink";
 import styles from "../styles/home.module.scss";
 
 export default function Home() {

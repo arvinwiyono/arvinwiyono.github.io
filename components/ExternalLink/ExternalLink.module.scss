@@ -1,9 +1,9 @@
 .externalLink {
-  @apply underline;
+  @apply duration-300;
+  @apply ease-in-out;
   @apply font-semibold;
   @apply transition-colors;
-  @apply ease-in-out;
-  @apply duration-300;
+  @apply underline;
 
   &:focus,
   &:visited {

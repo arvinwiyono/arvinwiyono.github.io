@@ -18,7 +18,7 @@ export default function PageLayout({ children, pageTitle, pageDescription }) {
         ></link>
       </Head>
       <div className={styles.pageWrapper}>
-        <main className="page-layout py-16 px-8 max-w-md sm:max-w-lg sm:px-0 mx-auto">
+        <main className={styles.mainContent}>
           {children}
         </main>
         <footer className={styles.footer}>

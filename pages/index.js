@@ -2,45 +2,51 @@ import PageLayout from "../components/PageLayout/PageLayout";
 import PulsingText from "../components/PulsingText";
 import ExternalLink from "../components/ExternalLink/ExternalLink";
 import styles from "../styles/home.module.scss";
+import ContentContainer from "../components/ContentContainer/ContentContainer";
 
 export default function Home() {
   return (
     <PageLayout pageTitle="Home" pageDescription="Arvin Wiyono's homepage">
-      <h1 className={styles.homeHeading}>
-        I build{" "}
-        <PulsingText bolded color="#4f7da7">
-          websites
-        </PulsingText>
-        ,
-        <br />I make{" "}
-        <PulsingText bolded color="#348677">
-          guitar covers
-        </PulsingText>
-        ,
-        <br />I sometimes{" "}
-        <PulsingText bolded color="#96783c">
-          take photos
-        </PulsingText>
-        .
-      </h1>
+      <ContentContainer>
+        <h1 className={styles.homeHeading}>
+          I build{" "}
+          <PulsingText bolded color="#659fd3">
+            websites
+          </PulsingText>
+          ,
+          <br />I make{" "}
+          <PulsingText bolded color="#49bda8">
+            guitar covers
+          </PulsingText>
+          ,
+          <br />I sometimes take{" "}
+          <PulsingText bolded color="#bd9649">
+            photos
+          </PulsingText>
+          .
+        </h1>
+      </ContentContainer>
 
-      <div className="my-12 sm:flex items-end">
-        <img
-          className="rounded shadow-lg mb-4 w-1/3 sm:mr-6 sm:mb-0"
-          src="/profile-picture.png"
-          alt="Arvin profile picture"
-        />
-        <h2 className="leading-tight text-2xl">
-          <span className="italic">Halo</span>,
-          <br />I am <span className="font-semibold">Arvin Wiyono</span>
-          <br />
-          <span className="text-sm text-gray-700">
-            ... or commonly known as <code>@awiy1</code>.
-          </span>
-        </h2>
-      </div>
+      <ContentContainer>
+        <div className="sm:flex items-end">
+          <img
+            className="rounded shadow-lg mb-4 w-1/3 sm:mr-6 sm:mb-0"
+            src="/profile-picture.png"
+            alt="Arvin profile picture"
+            loading="lazy"
+          />
+          <h2 className="leading-tight text-2xl">
+            <span className="italic">Halo</span>,
+            <br />I am <span className="font-semibold">Arvin Wiyono</span>
+            <br />
+            <span className="text-sm text-gray-700 dark:text-gray-500">
+              ... or commonly known as <code>@awiy1</code>.
+            </span>
+          </h2>
+        </div>
+      </ContentContainer>
 
-      <div className="my-12">
+      <ContentContainer>
         <p>
           I am a web developer based in Melbourne, Australia. I graduated as the{" "}
           <ExternalLink url="https://www.monash.edu/it/about-us/news-and-events/latest/articles/2018/outstanding-fit-students-recognised">
@@ -65,25 +71,27 @@ export default function Home() {
         <p>
           Let me know if you have any cool projects that I can help with! 😁
         </p>
-      </div>
+      </ContentContainer>
 
-      <div className={styles.mediaLinks}>
-        <p>You can find me or say hi on:</p>
-        <ExternalLink url="https://github.com/arvinwiyono">
-          <span className="jam jam-github"></span>
-          <span className={styles.linkDescription}>My GitHub profile</span>
-        </ExternalLink>
-        <ExternalLink url="https://www.linkedin.com/in/arvin-wiyono-80b5bba7/">
-          <span className="jam jam-linkedin"></span>
-          <span className={styles.linkDescription}>My LinkedIn profile</span>
-        </ExternalLink>
-        <ExternalLink url="https://www.youtube.com/watch?v=S6-mynCaNwk">
-          <span className="jam jam-youtube"></span>
-          <span className={styles.linkDescription}>
-            My Youtube guitar cover
-          </span>
-        </ExternalLink>
-      </div>
+      <ContentContainer>
+        <div className={styles.mediaLinks}>
+          <p>You can find me or say hi on:</p>
+          <ExternalLink url="https://github.com/arvinwiyono">
+            <span className="jam jam-github"></span>
+            <span className={styles.linkDescription}>My GitHub profile</span>
+          </ExternalLink>
+          <ExternalLink url="https://www.linkedin.com/in/arvin-wiyono-80b5bba7/">
+            <span className="jam jam-linkedin"></span>
+            <span className={styles.linkDescription}>My LinkedIn profile</span>
+          </ExternalLink>
+          <ExternalLink url="https://www.youtube.com/watch?v=S6-mynCaNwk">
+            <span className="jam jam-youtube"></span>
+            <span className={styles.linkDescription}>
+              My Youtube guitar cover
+            </span>
+          </ExternalLink>
+        </div>
+      </ContentContainer>
     </PageLayout>
   );
 }

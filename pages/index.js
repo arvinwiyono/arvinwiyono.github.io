@@ -10,17 +10,17 @@ export default function Home() {
       <ContentContainer>
         <h1 className={styles.homeHeading}>
           I build{" "}
-          <PulsingText bolded color="#659FD3">
+          <PulsingText bolded color="#659fd3">
             websites
           </PulsingText>
           ,
           <br />I make{" "}
-          <PulsingText bolded color="#49BDA8">
+          <PulsingText bolded color="#49bda8">
             guitar covers
           </PulsingText>
           ,
           <br />I sometimes take{" "}
-          <PulsingText bolded color="#BD9649">
+          <PulsingText bolded color="#bd9649">
             photos
           </PulsingText>
           .
@@ -39,7 +39,7 @@ export default function Home() {
             <span className="italic">Halo</span>,
             <br />I am <span className="font-semibold">Arvin Wiyono</span>
             <br />
-            <span className="text-sm text-gray-700">
+            <span className="text-sm text-gray-700 dark:text-gray-500">
               ... or commonly known as <code>@awiy1</code>.
             </span>
           </h2>

@@ -4,7 +4,7 @@
   $positions: 1 2 3;
   @each $position in $positions {
     > span:nth-of-type(#{$position}) {
-      animation-delay: #{$position * 0.5}s;
+      animation-delay: #{$position * (3/4)}s;
     }
   }
 }

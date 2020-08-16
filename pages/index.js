@@ -30,7 +30,7 @@ export default function Home() {
       <ContentContainer>
         <div className="sm:flex items-end">
           <img
-            className="rounded shadow-lg mb-4 w-1/3 sm:mr-6 sm:mb-0"
+            className="rounded shadow-lg dark:shadow-lg-pink mb-4 w-1/3 sm:mr-6 sm:mb-0"
             src="/profile-picture.png"
             alt="Arvin profile picture"
             loading="lazy"

@@ -1,10 +1,15 @@
 .homeHeading {
   @apply text-3xl;
+
+  $positions: 1 2 3;
+  @each $position in $positions {
+    > span:nth-of-type(#{$position}) {
+      animation-delay: #{$position * 0.5}s;
+    }
+  }
 }
 
 .mediaLinks {
-  @apply mt-12;
-
   > a {
     @apply text-3xl;
     text-decoration: none;

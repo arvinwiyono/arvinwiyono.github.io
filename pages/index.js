@@ -1,8 +1,9 @@
+import ContentContainer from "../components/ContentContainer/ContentContainer";
+import ExternalLink from "../components/ExternalLink";
+import Image from "../components/Image";
 import PageLayout from "../components/PageLayout/PageLayout";
 import PulsingText from "../components/PulsingText";
-import ExternalLink from "../components/ExternalLink/ExternalLink";
 import styles from "../styles/home.module.scss";
-import ContentContainer from "../components/ContentContainer/ContentContainer";
 
 export default function Home() {
   return (
@@ -29,17 +30,17 @@ export default function Home() {
 
       <ContentContainer>
         <div className="sm:flex items-end">
-          <img
-            className="rounded shadow-lg dark:shadow-lg-pink mb-4 w-1/3 sm:mr-6 sm:mb-0"
+          <Image
+            rounded
+            shadowLarge
             src="/profile-picture.png"
-            alt="Arvin profile picture"
-            loading="lazy"
+            alt="Arvin Wiyono's profile picture"
           />
           <h2 className="leading-tight text-2xl">
             <span className="italic">Halo</span>,
             <br />I am <span className="font-semibold">Arvin Wiyono</span>
             <br />
-            <span className="text-sm text-gray-700 dark:text-gray-500">
+            <span className="text-sm text-body-text-secondary">
               ... or commonly known as <code>@awiy1</code>.
             </span>
           </h2>

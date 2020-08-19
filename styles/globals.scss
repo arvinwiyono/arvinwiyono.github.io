@@ -1,21 +1,18 @@
 @import "tailwind";
-@import "paragraph";
+@import "colors";
 @import "image";
+@import "link";
+@import "paragraph";
 
 html,
 body {
-  @apply bg-white;
+  @apply bg-body;
+  @apply text-body-text-primary;
   @apply text-base;
-  @apply text-gray-900;
 
   font-family: "Cardo", serif;
   margin: 0;
   padding: 0;
-
-  @screen dark {
-    @apply bg-body-dark;
-    @apply text-gray-300;
-  }
 }
 
 * {

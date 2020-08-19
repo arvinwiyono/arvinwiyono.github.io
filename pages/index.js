@@ -1,9 +1,9 @@
+import ContentContainer from "../components/ContentContainer/ContentContainer";
+import ExternalLink from "../components/ExternalLink";
+import Image from "../components/Image";
 import PageLayout from "../components/PageLayout/PageLayout";
 import PulsingText from "../components/PulsingText";
-import ExternalLink from "../components/ExternalLink";
 import styles from "../styles/home.module.scss";
-import ContentContainer from "../components/ContentContainer/ContentContainer";
-import Image from "../components/Image";
 
 export default function Home() {
   return (

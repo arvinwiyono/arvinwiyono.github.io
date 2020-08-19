@@ -1,4 +1,4 @@
-.externalLink {
+a {
   @apply duration-300;
   @apply ease-in-out;
   @apply font-semibold;
@@ -7,10 +7,10 @@
 
   &:focus,
   &:visited {
-    @apply text-gray-600;
+    @apply text-link-visited;
   }
 
   &:hover {
-    @apply text-pink-300;
+    @apply text-link-hover;
   }
 }

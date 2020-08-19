@@ -1,0 +1,17 @@
+:root {
+  --body-background: theme("colors.white");
+  --body-text-primary: theme("colors.gray.900");
+  --body-text-secondary: theme("colors.gray.700");
+  --footer-text: theme("colors.gray.700");
+  --link-hover: theme("colors.pink.300");
+  --link-visted: theme("colors.gray.600");
+}
+
+@screen dark {
+  :root {
+    --body-background: #081226;
+    --body-text-primary: theme("colors.gray.300");
+    --body-text-secondary: theme("colors.gray.500");
+    --footer-text: theme("colors.pink.300");
+  }
+}

@@ -11,7 +11,7 @@
     "autoprefixer": "^9.8.6",
     "classnames": "^2.2.6",
     "next": "9.5.3",
-    "postcss-flexbugs-fixes": "^4.2.1",
+    "postcss-flexbugs-fixes": "^5.0.0",
     "postcss-preset-env": "^6.7.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
